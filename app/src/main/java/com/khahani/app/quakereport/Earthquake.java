@@ -6,6 +6,11 @@ public class Earthquake {
     private float mMagnit;
     private long mDate;
 
+    public Earthquake(String mCity, float mMagnit) {
+        this.mCity = mCity;
+        this.mMagnit = mMagnit;
+    }
+
     public Earthquake(String mCity, float mMagnit, long mDate) {
         this.mCity = mCity;
         this.mMagnit = mMagnit;
