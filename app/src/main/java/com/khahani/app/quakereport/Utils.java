@@ -13,9 +13,9 @@ import java.util.List;
 
 public class Utils {
 
-    private final String JSON_DATA = "[{\"city\":\"Tehran\", \"magnitude\":2.5},{\"city\":\"Sistan\", \"magnitude\":5.5},{\"city\":\"Azarb\", \"magnitude\":3}]";
+    private static final String JSON_DATA = "[{\"city\":\"Tehran\", \"magnitude\":2.5},{\"city\":\"Sistan\", \"magnitude\":5.5},{\"city\":\"Azarb\", \"magnitude\":3}]";
 
-    public List<Earthquake> getEarthquakeFromJson(){
+    public static List<Earthquake> getEarthquakeFromJson(){
 
         List<Earthquake> result = new ArrayList<>();
 
