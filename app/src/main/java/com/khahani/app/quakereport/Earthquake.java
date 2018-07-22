@@ -1,7 +1,6 @@
 package com.khahani.app.quakereport;
 
 
-
 public class Earthquake {
     private String mCity;
     private float mMagnit;
