@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         listView = (ListView)findViewById(R.id.listview);
 
+        EathquakeAdapter adapter = new EathquakeAdapter(this, data);
+
+        listView.setAdapter(adapter);
 
 
     }
