@@ -15,14 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<Earthquake> data = new ArrayList<>();
+       /* ArrayList<Earthquake> data = new ArrayList<>();
         data.add(new Earthquake("Teharn",  2.5f));
         data.add(new Earthquake("Sistan baluc",  5.5f));
-        data.add(new Earthquake("Azarb",  3f));
+        data.add(new Earthquake("Azarb",  3f));*/
 
         listView = (ListView)findViewById(R.id.listview);
 
-        EathquakeAdapter adapter = new EathquakeAdapter(this, data);
+        EathquakeAdapter adapter = new EathquakeAdapter(this, Utils.getEarthquakeFromJson());
 
         listView.setAdapter(adapter);
 
